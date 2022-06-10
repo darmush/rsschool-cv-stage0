@@ -8,10 +8,12 @@ html {
 ul {
     margin: 0;
     list-style: none;
+    padding-inline-start: 0;
 }
 
 li {
     padding-left: 0;
+    margin: 0;
 }
 
 a {
@@ -19,8 +21,40 @@ a {
     color: inherit;
 }
 
+p {
+    margin: 0;
+}
+
 h1 {
     margin: 0;
+}
+
+h2 {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 5px;
+    color: #363636;
+}
+
+h3 {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #555555;
+}
+
+h4 {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #555555;
 }
 
 body {
@@ -101,3 +135,96 @@ body {
     color: #363636;
     margin-top: 9px;
 }
+
+.cv__inner {
+    margin-top: 116px;
+    display: flex;
+}
+
+.cv__yellow-rectangle {
+    width: 60px;
+    height: 4px;
+    margin-left: 0px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    background: #F2C100;
+}
+
+.cv__column-left {
+    max-width: 254px;
+    margin-right: 126px;
+}
+
+.cv__column-right {
+    max-width: 730px;
+}
+
+.cv__contact {
+    margin-bottom: 80px;
+}
+
+.cv__contact-item + .cv__contact-item {
+    padding-top: 26px;
+}
+
+.cv__contact-text {
+    margin-top: 2px;
+}
+
+.cv__skills {
+    margin-bottom: 80px;
+}
+
+.cv__skills-item + .cv__skills-item {
+    padding-top: 18px;
+}
+
+.cv__skills-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cv__skills-dots {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.cv__skills-dot {
+    width: 19px;
+    height: 19px;
+    background-color: #E1E1E1;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.cv__skills-dot-yellow {
+    background-color: #F2C100;
+    ;
+}
+
+.cv__languages {
+    margin-bottom: 80px;
+}
+
+.cv__languages-item + .cv__languages-item {
+    padding-top: 18px;
+}
+
+.cv__column-right {
+    max-width: 730px;
+}
+
+.cv__profile {
+    margin-bottom: 80px;
+}
+
+.cv__profile-text {
+    width: 634px;
+}
+
+.cv__profile-text + .cv__profile-text {
+    padding-top: 32px;
+}
+
