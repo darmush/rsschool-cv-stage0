@@ -25,6 +25,10 @@ p {
     margin: 0;
 }
 
+img {
+    display: block;
+}
+
 h1 {
     margin: 0;
 }
@@ -106,6 +110,7 @@ body {
 .main-screen-photo__item {
     width: 284px;
     height: 284px;
+    display: block;
 }
 
 .main-screen__column-title {
@@ -151,12 +156,12 @@ body {
 }
 
 .cv__column-left {
-    max-width: 254px;
+    min-width: 254px;
     margin-right: 126px;
 }
 
 .cv__column-right {
-    max-width: 730px;
+    min-width: 730px;
 }
 
 .cv__contact {
@@ -196,6 +201,9 @@ body {
     height: 19px;
     background-color: #E1E1E1;
     border-radius: 50%;
+}
+
+.cv__skills-dot:not(:last-child) {
     margin-right: 8px;
 }
 
@@ -213,11 +221,31 @@ body {
 }
 
 .cv__column-right {
-    max-width: 730px;
+    width: 730px;
 }
 
 .cv__profile {
-    margin-bottom: 80px;
+    margin-bottom: 100px;
+}
+
+.cv__profile {
+    position: relative;
+}
+
+.cv__profile-title {
+    position: relative;
+    z-index: 2;
+}
+
+.cv__profile::before {
+    content: '';
+    width: 82px;
+    height: 82px;
+    background-color: #FFCB00;
+    border-radius: 50%;
+    position: absolute;
+    left: -28px;
+    top: -28px;
 }
 
 .cv__profile-text {
@@ -228,3 +256,77 @@ body {
     padding-top: 32px;
 }
 
+.cv__experience {
+    margin-bottom: 100px;
+}
+
+.cv__experience-list-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cv__experience-list-item + .cv__experience-list-item {
+    padding-top: 50px;
+}
+
+.cv__experience-list-item-left {
+    width: 255px;
+}
+
+.cv__experience-list-item-right {
+    width: 444px;
+}
+
+.cv__experience-examples-list {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #F2C100;
+    list-style-type: circle;
+    list-style-position: inside;
+    list-style-type: disc;
+    list-style-type: '📝';
+    padding-top: 7px;
+}
+
+.cv__education {
+    margin-bottom: 100px;
+}
+
+.cv__education-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.cv__education-item + .cv__education-item {
+    padding-top: 18px;
+}
+
+.cv__education-list-title {
+    width: 281px;
+}
+
+.cv__education-list-separator {
+    font-weight: 500;
+    margin-right: 9px;
+    margin-left: 9px;
+}
+
+.cv__code-examples {
+    margin-bottom: 100px;
+}
+
+.cv__code-examples-block {
+    width: 100%;
+    background: #E1E1E1;
+}
+
+.cv__code-examples-block-item {
+    padding: 30px 0 30px 95px;
+}
+
+.cv_code-examles-text-bold {
+    font-weight: 600;
+}
