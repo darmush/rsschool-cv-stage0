@@ -5,6 +5,10 @@ html {
     box-sizing: inherit;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 ul {
     margin: 0;
     list-style: none;
@@ -75,6 +79,18 @@ body {
     margin: 0 auto;
 }
 
+.header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+    padding: 0 17px;
+    background-color: white;
+    z-index: 3;
+    transition: background 0.6s ease-in-out;
+}
+
 .header__inner {
     display: flex;
     justify-content: flex-end;
@@ -95,7 +111,34 @@ body {
 }
 
 .menu__link {
-    
+    color: #363636;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.menu__link:after {
+	content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 4px;
+    background-color: #F2C100;
+    transition: width ease-in-out 0.3s;
+}
+
+.menu__link:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    height: 4px;
+    background-color: #F2C100;
+    transition: width ease-in-out 0.4s; 
 }
 
 .main-screen {
@@ -165,7 +208,7 @@ body {
 }
 
 .cv__contact {
-    margin-bottom: 80px;
+
 }
 
 .cv__contact-item + .cv__contact-item {
@@ -177,7 +220,7 @@ body {
 }
 
 .cv__skills {
-    margin-bottom: 80px;
+    margin-top: 80px;
 }
 
 .cv__skills-item + .cv__skills-item {
@@ -213,7 +256,7 @@ body {
 }
 
 .cv__languages {
-    margin-bottom: 80px;
+    margin-top: 80px;
 }
 
 .cv__languages-item + .cv__languages-item {
@@ -225,7 +268,7 @@ body {
 }
 
 .cv__profile {
-    margin-bottom: 100px;
+
 }
 
 .cv__profile {
@@ -257,7 +300,7 @@ body {
 }
 
 .cv__experience {
-    margin-bottom: 100px;
+    margin-top: 100px;
 }
 
 .cv__experience-list-item {
@@ -292,7 +335,7 @@ body {
 }
 
 .cv__education {
-    margin-bottom: 100px;
+    margin-top: 100px;
 }
 
 .cv__education-item {
@@ -315,7 +358,7 @@ body {
 }
 
 .cv__code-examples {
-    margin-bottom: 100px;
+    margin-top: 100px;
 }
 
 .cv__code-examples-block {
@@ -329,4 +372,40 @@ body {
 
 .cv_code-examles-text-bold {
     font-weight: 600;
+}
+
+.footer {
+    background-color: #363636;
+    margin-top: 100px;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+}
+
+.footer__github-svg {
+    width: 137px;
+    height: 34px;
+}
+
+.footer__github-svg:hover path {
+    fill: #FFCB00;
+    transition: all .3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.footer__rss-svg {
+    width: 92px;
+    height: 34px;
+}
+
+.footer__rss-svg:hover path {
+    fill: #FFCB00;
+    transition: all .3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.footer__text {
+    color: #FFFFFF;
 }
