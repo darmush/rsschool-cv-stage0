@@ -6,7 +6,7 @@
 * **GitHub**: [darmush](https://github.com/darmush "darmush")
 * **Discord**: darmush#7313 
 ## About me
-Hello! My name is Daria, I'm 25. I'm from Kazakhstan, currently living in Tbilisi, Georgia.
+Hello! My name is Darya, I'm 25. I'm from Kazakhstan, currently living in Tbilisi, Georgia.
 
 I worked as an illustrator, studied motion design. I have worked with designers and digital agencies and am familiar with the web development process. I believe that programming is also a creative activity and I have long dreamed of trying myself in this. Now I study at RS School and create my first projects
 ## Hard skills
