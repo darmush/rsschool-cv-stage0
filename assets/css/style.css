@@ -219,6 +219,11 @@ body {
     margin-top: 2px;
 }
 
+.cv__contact-text:hover {
+    background: #E1E1E1;
+}
+
+
 .cv__skills {
     margin-top: 80px;
 }
