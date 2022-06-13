@@ -1,0 +1,415 @@
+html {
+    box-sizing: border-box;
+}
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+li {
+    padding-left: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 5px;
+    color: #363636;
+}
+
+h3 {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #555555;
+}
+
+h4 {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #555555;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #555;
+}
+
+.container {
+    max-width: 1130px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+    padding: 0 17px;
+    background-color: white;
+    z-index: 3;
+    transition: background 0.6s ease-in-out;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: flex-end;
+    padding: 33px 0 17px 380px;
+}
+
+.menu__list {
+    display: flex;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #363636;
+}
+
+.menu__item:not(:first-child) {
+    padding-left: 55px;
+}
+
+.menu__link {
+    color: #363636;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.menu__link:after {
+	content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 4px;
+    background-color: #F2C100;
+    transition: width ease-in-out 0.3s;
+}
+
+.menu__link:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    height: 4px;
+    background-color: #F2C100;
+    transition: width ease-in-out 0.4s; 
+}
+
+.main-screen {
+    padding: 176px 0 0;
+}
+
+.main-screen__inner {
+    display: flex;
+    justify-content: start;
+}
+
+.main-screen-photo__item {
+    width: 284px;
+    height: 284px;
+    display: block;
+}
+
+.main-screen__column-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 96px;
+}
+
+.main-screen__title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 82px;
+    letter-spacing: 4px;
+    text-align: left;
+    color: #363636;
+}
+
+.main-screen__subtitle {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 54px;
+    letter-spacing: 7px;
+    text-align: left;
+    color: #363636;
+    margin-top: 9px;
+}
+
+.cv__inner {
+    margin-top: 116px;
+    display: flex;
+}
+
+.cv__yellow-rectangle {
+    width: 60px;
+    height: 4px;
+    margin-left: 0px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    background: #F2C100;
+}
+
+.cv__column-left {
+    min-width: 254px;
+    margin-right: 126px;
+}
+
+.cv__column-right {
+    min-width: 730px;
+}
+
+.cv__contact {
+
+}
+
+.cv__contact-item + .cv__contact-item {
+    padding-top: 26px;
+}
+
+.cv__contact-text {
+    margin-top: 2px;
+}
+
+.cv__contact-text:hover {
+    background: #E1E1E1;
+}
+
+.cv__skills {
+    margin-top: 80px;
+}
+
+.cv__skills-item + .cv__skills-item {
+    padding-top: 18px;
+}
+
+.cv__skills-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cv__skills-dots {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.cv__skills-dot {
+    width: 19px;
+    height: 19px;
+    background-color: #E1E1E1;
+    border-radius: 50%;
+}
+
+.cv__skills-dot:not(:last-child) {
+    margin-right: 8px;
+}
+
+.cv__skills-dot-yellow {
+    background-color: #F2C100;
+    ;
+}
+
+.cv__languages {
+    margin-top: 80px;
+}
+
+.cv__languages-item + .cv__languages-item {
+    padding-top: 18px;
+}
+
+.cv__column-right {
+    width: 730px;
+}
+
+.cv__profile {
+
+}
+
+.cv__profile {
+    position: relative;
+}
+
+.cv__profile-title {
+    position: relative;
+    z-index: 2;
+}
+
+.cv__profile::before {
+    content: '';
+    width: 82px;
+    height: 82px;
+    background-color: #FFCB00;
+    border-radius: 50%;
+    position: absolute;
+    left: -28px;
+    top: -28px;
+}
+
+.cv__profile-text {
+    width: 634px;
+}
+
+.cv__profile-text + .cv__profile-text {
+    padding-top: 32px;
+}
+
+.cv__experience {
+    margin-top: 100px;
+}
+
+.cv__experience-list-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cv__experience-list-item + .cv__experience-list-item {
+    padding-top: 50px;
+}
+
+.cv__experience-list-item-left {
+    width: 255px;
+}
+
+.cv__experience-list-item-right {
+    width: 444px;
+}
+
+.cv__experience-examples-list {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #F2C100;
+    list-style-type: circle;
+    list-style-position: inside;
+    list-style-type: disc;
+    list-style-type: '📝';
+    padding-top: 7px;
+}
+
+.cv__education {
+    margin-top: 100px;
+}
+
+.cv__education-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.cv__education-item + .cv__education-item {
+    padding-top: 18px;
+}
+
+.cv__education-list-title {
+    width: 281px;
+}
+
+.cv__education-list-separator {
+    font-weight: 500;
+    margin-right: 9px;
+    margin-left: 9px;
+}
+
+.cv__code-examples {
+    margin-top: 100px;
+}
+
+.cv__code-examples-block {
+    width: 100%;
+    background: #E1E1E1;
+}
+
+.cv__code-examples-block-item {
+    padding: 30px 0 30px 95px;
+}
+
+.cv_code-examles-text-bold {
+    font-weight: 600;
+}
+
+.footer {
+    background-color: #363636;
+    margin-top: 100px;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+}
+
+.footer__github-svg {
+    width: 137px;
+    height: 34px;
+}
+
+.footer__github-svg:hover path {
+    fill: #FFCB00;
+    transition: all .3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.footer__rss-svg {
+    width: 92px;
+    height: 34px;
+}
+
+.footer__rss-svg:hover path {
+    fill: #FFCB00;
+    transition: all .3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.footer__text {
+    color: #FFFFFF;
+}
