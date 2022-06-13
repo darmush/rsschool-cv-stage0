@@ -142,7 +142,7 @@ body {
 }
 
 .main-screen {
-    padding: 96px 0 0;
+    padding: 176px 0 0;
 }
 
 .main-screen__inner {
@@ -222,7 +222,6 @@ body {
 .cv__contact-text:hover {
     background: #E1E1E1;
 }
-
 
 .cv__skills {
     margin-top: 80px;
